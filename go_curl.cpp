@@ -118,7 +118,6 @@ int go_curl()
         curl_easy_setopt(easy_handle,CURLOPT_URL,"http://www.fuyuncun.com/index.asp");
         return_code = curl_easy_perform(easy_handle);
 
-        curl_easy_setopt(easy_handle,CURLOPT_POST,0);
         curl_easy_setopt(easy_handle,CURLOPT_URL,"http://www.fuyuncun.com/forumdisplay.asp?fid=1");
         return_code = curl_easy_perform(easy_handle);
 
